@@ -300,6 +300,7 @@
     NSLog(@"全屏开始");
     AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     appDelegate.isFull = YES;
+    [self changeScreen:UIInterfaceOrientationLandscapeRight];
 }
 
 
@@ -307,6 +308,11 @@
     NSLog(@"全屏结束");
     AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     appDelegate.isFull = NO;
+    [self changeScreen:UIInterfaceOrientationPortrait];
+}
+
+-(void)changeScreen:(UIInterfaceOrientation)interfaceOrientation
+{
     //强制归正：
     if ([[UIDevice currentDevice] respondsToSelector:@selector(setOrientation:)]) {
         SEL selector = NSSelectorFromString(@"setOrientation:");
@@ -314,12 +320,11 @@
         
         [invocation setSelector:selector];
         [invocation setTarget:[UIDevice currentDevice]];
-        int val =UIInterfaceOrientationPortrait;
+        int val = interfaceOrientation;
         [invocation setArgument:&val atIndex:2];
         [invocation invoke];
     }
 }
-
 
 #pragma mark ================ WillDisappear ================
 -(void)viewWillDisappear:(BOOL)animated{
