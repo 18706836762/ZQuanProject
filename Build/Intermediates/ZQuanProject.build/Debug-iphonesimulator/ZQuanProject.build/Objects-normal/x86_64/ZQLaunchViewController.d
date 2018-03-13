@@ -16,6 +16,6 @@ dependencies: \
   /Users/wyy/Desktop/转圈/ZQuanProject1.1/ZQuanProject/Tool/Helper.h \
   /Users/wyy/Desktop/转圈/ZQuanProject1.1/ZQuanProject/Class/ZQLaunchViewController.h \
   /Users/wyy/Desktop/转圈/ZQuanProject1.1/ZQuanProject/Tool/Helper+Cache.h \
-  /Users/wyy/Desktop/转圈/ZQuanProject1.1/ZQuanProject/Tool/JZNetTool.h \
+  /Users/wyy/Desktop/转圈/ZQuanProject1.1/ZQuanProject/Class/Net/JZNetTool.h \
   /Users/wyy/Desktop/转圈/ZQuanProject1.1/ZQuanProject/Class/GradientProgressView.h \
   /Users/wyy/Desktop/转圈/ZQuanProject1.1/ZQuanProject/Class/UnzipManager.h

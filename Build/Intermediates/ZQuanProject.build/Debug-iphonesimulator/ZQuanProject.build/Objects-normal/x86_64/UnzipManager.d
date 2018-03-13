@@ -15,7 +15,7 @@ dependencies: \
   /Users/wyy/Desktop/转圈/ZQuanProject1.1/ZQuanProject/Base/BaseViewController.h \
   /Users/wyy/Desktop/转圈/ZQuanProject1.1/ZQuanProject/Tool/Helper.h \
   /Users/wyy/Desktop/转圈/ZQuanProject1.1/ZQuanProject/Class/UnzipManager.h \
-  /Users/wyy/Desktop/转圈/ZQuanProject1.1/ZQuanProject/Tool/JZNetTool.h \
+  /Users/wyy/Desktop/转圈/ZQuanProject1.1/ZQuanProject/Class/Net/JZNetTool.h \
   /Users/wyy/Desktop/转圈/ZQuanProject1.1/Build/Products/Debug-iphonesimulator/SSZipArchive/SSZipArchive.framework/Modules/module.modulemap \
   /Users/wyy/Desktop/转圈/ZQuanProject1.1/Build/Products/Debug-iphonesimulator/SSZipArchive/SSZipArchive.framework/Headers/ZipArchive.h \
   /Users/wyy/Desktop/转圈/ZQuanProject1.1/Build/Products/Debug-iphonesimulator/SSZipArchive/SSZipArchive.framework/Headers/SSZipCommon.h \

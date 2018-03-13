@@ -15,4 +15,4 @@ dependencies: \
   /Users/wyy/Desktop/转圈/ZQuanProject1.1/ZQuanProject/Base/BaseViewController.h \
   /Users/wyy/Desktop/转圈/ZQuanProject1.1/ZQuanProject/Tool/Helper.h \
   /Users/wyy/Desktop/转圈/ZQuanProject1.1/ZQuanProject/Class/Plugins/NetworkInfoPlugin.h \
-  /Users/wyy/Desktop/转圈/ZQuanProject1.1/ZQuanProject/Tool/JZNetObserver.h
+  /Users/wyy/Desktop/转圈/ZQuanProject1.1/ZQuanProject/Class/Net/JZNetObserver.h

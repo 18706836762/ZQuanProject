@@ -16,7 +16,7 @@
     
     //NSString *clientId = message[@"clientId"];
     
-    NSString *param = message[@"param"];
+    NSString *param = [NSString stringWithFormat:@"%@",message[@"param"]];
     if(IsEmptyStr(param)){
         param = nil;
     }

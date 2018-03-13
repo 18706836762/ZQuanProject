@@ -210,7 +210,7 @@
 - (UIInterfaceOrientationMask)application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(UIWindow *)window {
     
     if(_isFull){
-        return UIInterfaceOrientationMaskAll;
+        return UIInterfaceOrientationMaskLandscape;
     }else
     return UIInterfaceOrientationMaskPortrait;
 }

@@ -15,4 +15,4 @@ dependencies: \
   /Users/wyy/Desktop/转圈/ZQuanProject1.1/ZQuanProject/Base/BaseViewController.h \
   /Users/wyy/Desktop/转圈/ZQuanProject1.1/ZQuanProject/Tool/Helper.h \
   /Users/wyy/Desktop/转圈/ZQuanProject1.1/ZQuanProject/Class/Plugins/LoginPlugin.h \
-  /Users/wyy/Desktop/转圈/ZQuanProject1.1/ZQuanProject/Tool/JZNetTool.h
+  /Users/wyy/Desktop/转圈/ZQuanProject1.1/ZQuanProject/Class/Net/JZNetTool.h

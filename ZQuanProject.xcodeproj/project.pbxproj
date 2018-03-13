@@ -741,7 +741,7 @@
 				TargetAttributes = {
 					75A224571FDF8CF5005E28B2 = {
 						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
@@ -1115,8 +1115,8 @@
 				CODE_SIGN_ENTITLEMENTS = ZQuanProject/ZQuanProject.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Lixin Hao (54KENJ26LF)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3WAEEN98E5;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/ZQuanProject/ZQuanProject-Prefix.pch";
 				INFOPLIST_FILE = ZQuanProject/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -1141,7 +1141,7 @@
 					"\"UMMobClick\"",
 					"-all_load",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = cc.circling;
+				PRODUCT_BUNDLE_IDENTIFIER = yy.cc.yycircling;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1157,8 +1157,8 @@
 				CODE_SIGN_ENTITLEMENTS = ZQuanProject/ZQuanProject.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Lixin Hao (54KENJ26LF)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3WAEEN98E5;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/ZQuanProject/ZQuanProject-Prefix.pch";
 				INFOPLIST_FILE = ZQuanProject/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -1183,7 +1183,7 @@
 					"\"UMMobClick\"",
 					"-all_load",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = cc.circling;
+				PRODUCT_BUNDLE_IDENTIFIER = yy.cc.yycircling;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";

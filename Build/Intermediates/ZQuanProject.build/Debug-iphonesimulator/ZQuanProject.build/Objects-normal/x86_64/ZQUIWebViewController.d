@@ -16,4 +16,4 @@ dependencies: \
   /Users/wyy/Desktop/转圈/ZQuanProject1.1/ZQuanProject/Tool/Helper.h \
   /Users/wyy/Desktop/转圈/ZQuanProject1.1/ZQuanProject/Class/NSURLProtocol/NSURLProtocol+WebKitSupport.h \
   /Users/wyy/Desktop/转圈/ZQuanProject1.1/ZQuanProject/Class/ZQWebVCSingleton.h \
-  /Users/wyy/Desktop/转圈/ZQuanProject1.1/ZQuanProject/Tool/JZNetObserver.h
+  /Users/wyy/Desktop/转圈/ZQuanProject1.1/ZQuanProject/Class/Net/JZNetObserver.h

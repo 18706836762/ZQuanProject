@@ -62,7 +62,7 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		OxT2pCAxbP4+DEwcZvESlTOwNUQ=
+		IdQzmrkizTIynZ1LqsLM+fFbtkk=
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
@@ -102,7 +102,7 @@
 		</data>
 		<key>Frameworks/AFNetworking.framework/AFNetworking</key>
 		<data>
-		uLaW23+Tcn7UpJMUakuNYpwAJCI=
+		VrB0Aojq446QKrlrmnsi+gBmEp8=
 		</data>
 		<key>Frameworks/AFNetworking.framework/Info.plist</key>
 		<data>
@@ -118,7 +118,7 @@
 		</data>
 		<key>Frameworks/SSZipArchive.framework/SSZipArchive</key>
 		<data>
-		hDiAKyp+eUg0AVs7JrKKniacM5k=
+		x+YG+XOuuN8L4m6y/x96o2rv0BE=
 		</data>
 		<key>Frameworks/SSZipArchive.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -126,7 +126,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		JI0YYaZjq6EG39U/kM6A2U9Gf2k=
+		yExXwMRmJM0zGdNSKK7KIAGqy/0=
 		</data>
 		<key>InfoPlist.strings</key>
 		<data>
@@ -337,11 +337,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			OxT2pCAxbP4+DEwcZvESlTOwNUQ=
+			IdQzmrkizTIynZ1LqsLM+fFbtkk=
 			</data>
 			<key>hash2</key>
 			<data>
-			QXwkC5P7nP/mb7WnfJrtDa72wAlxC9ws+I4+WXMM95I=
+			S8wkrNHE2hW7GMQbGC6ipFMTWCfxEcDf8sz76oIdMxc=
 			</data>
 		</dict>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
@@ -447,11 +447,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			uLaW23+Tcn7UpJMUakuNYpwAJCI=
+			VrB0Aojq446QKrlrmnsi+gBmEp8=
 			</data>
 			<key>hash2</key>
 			<data>
-			kTkHnXGRLlFXej17fRoKC3TwcQARFFnpWt0wvLHHBno=
+			n52Y5xLUWV63UqWPwuH+8IAgDOa08MgKgGGZqFi9SXw=
 			</data>
 		</dict>
 		<key>Frameworks/AFNetworking.framework/Info.plist</key>
@@ -491,11 +491,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			hDiAKyp+eUg0AVs7JrKKniacM5k=
+			x+YG+XOuuN8L4m6y/x96o2rv0BE=
 			</data>
 			<key>hash2</key>
 			<data>
-			CxVwxjzmAiZsxk4ZHwiQK3hmyunCy64DcVMMHFPjVMU=
+			ZOipmlB0c1eFM+3zz5eW5BqhZloohV1cy9riPf5T3QY=
 			</data>
 		</dict>
 		<key>Frameworks/SSZipArchive.framework/_CodeSignature/CodeResources</key>

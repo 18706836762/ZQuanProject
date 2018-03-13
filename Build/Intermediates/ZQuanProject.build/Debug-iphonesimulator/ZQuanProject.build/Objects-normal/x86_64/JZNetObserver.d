@@ -1,5 +1,5 @@
 dependencies: \
-  /Users/wyy/Desktop/转圈/ZQuanProject1.1/ZQuanProject/Tool/JZNetObserver.m \
+  /Users/wyy/Desktop/转圈/ZQuanProject1.1/ZQuanProject/Class/Net/JZNetObserver.m \
   /Users/wyy/Desktop/转圈/ZQuanProject1.1/ZQuanProject/ZQuanProject-Prefix.pch \
   /Users/wyy/Desktop/转圈/ZQuanProject1.1/ZQuanProject/AppDelegate.h \
   /Users/wyy/Desktop/转圈/ZQuanProject1.1/ZQuanProject/lib/libWeiboSDK/WeiboSDK.h \
@@ -14,7 +14,7 @@ dependencies: \
   /Users/wyy/Desktop/转圈/ZQuanProject1.1/ZQuanProject/ViewController.h \
   /Users/wyy/Desktop/转圈/ZQuanProject1.1/ZQuanProject/Base/BaseViewController.h \
   /Users/wyy/Desktop/转圈/ZQuanProject1.1/ZQuanProject/Tool/Helper.h \
-  /Users/wyy/Desktop/转圈/ZQuanProject1.1/ZQuanProject/Tool/JZNetObserver.h \
+  /Users/wyy/Desktop/转圈/ZQuanProject1.1/ZQuanProject/Class/Net/JZNetObserver.h \
   /Users/wyy/Desktop/转圈/ZQuanProject1.1/Build/Products/Debug-iphonesimulator/AFNetworking/AFNetworking.framework/Modules/module.modulemap \
   /Users/wyy/Desktop/转圈/ZQuanProject1.1/Build/Products/Debug-iphonesimulator/AFNetworking/AFNetworking.framework/Headers/UIProgressView+AFNetworking.h \
   /Users/wyy/Desktop/转圈/ZQuanProject1.1/Build/Products/Debug-iphonesimulator/AFNetworking/AFNetworking.framework/Headers/UIWebView+AFNetworking.h \

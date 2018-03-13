@@ -15,7 +15,7 @@ dependencies: \
   /Users/wyy/Desktop/转圈/ZQuanProject1.1/ZQuanProject/Base/BaseViewController.h \
   /Users/wyy/Desktop/转圈/ZQuanProject1.1/ZQuanProject/Tool/Helper.h \
   /Users/wyy/Desktop/转圈/ZQuanProject1.1/ZQuanProject/Class/ZQLaunchViewController.h \
-  /Users/wyy/Desktop/转圈/ZQuanProject1.1/ZQuanProject/Tool/JZNetObserver.h \
+  /Users/wyy/Desktop/转圈/ZQuanProject1.1/ZQuanProject/Class/Net/JZNetObserver.h \
   /Users/wyy/Desktop/转圈/ZQuanProject1.1/ZQuanProject/Class/NSURLProtocol/WebNSURLProtocol.h \
   /Users/wyy/Desktop/转圈/ZQuanProject1.1/Pods/UMengAnalytics/umsdk_IOS_analyics_idfa_v4.2.4/UMMobClick.framework/Headers/MobClick.h \
   /Users/wyy/Desktop/转圈/ZQuanProject1.1/ZQuanProject/Tool/EBBannerView/EBBannerView.h \
