@@ -206,4 +206,13 @@
     }
 }
 
+
+- (UIInterfaceOrientationMask)application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(UIWindow *)window {
+    
+    if(_isFull){
+        return UIInterfaceOrientationMaskAll;
+    }else
+    return UIInterfaceOrientationMaskPortrait;
+}
+
 @end

@@ -17,6 +17,8 @@ typedef void(^WBLoginResultBlock)(WBBaseResponse *response);
 
 @property(nonatomic,strong)WBLoginResultBlock wbLoginResultBlock;
 
+@property (nonatomic,assign)BOOL isFull;
+
 -(void)receiveNotifyPushWebParam:(NSDictionary *)param;
 
 @end
