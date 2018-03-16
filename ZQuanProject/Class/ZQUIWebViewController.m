@@ -309,6 +309,7 @@
     AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     appDelegate.isFull = NO;
     [self changeScreen:UIInterfaceOrientationPortrait];
+    [[UIApplication sharedApplication] setStatusBarHidden:NO withAnimation:UIStatusBarAnimationFade];
 }
 
 -(void)changeScreen:(UIInterfaceOrientation)interfaceOrientation
