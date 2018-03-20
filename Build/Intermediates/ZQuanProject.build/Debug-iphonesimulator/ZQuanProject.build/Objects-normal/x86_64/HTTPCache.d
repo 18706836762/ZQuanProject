@@ -1,0 +1,25 @@
+dependencies: \
+  /Users/wyy/Desktop/转圈/ZQuanProject1.1/ZQuanProject/Class/HTTPCache.m \
+  /Users/wyy/Desktop/转圈/ZQuanProject1.1/ZQuanProject/ZQuanProject-Prefix.pch \
+  /Users/wyy/Desktop/转圈/ZQuanProject1.1/ZQuanProject/AppDelegate.h \
+  /Users/wyy/Desktop/转圈/ZQuanProject1.1/ZQuanProject/lib/libWeiboSDK/WeiboSDK.h \
+  /Users/wyy/Desktop/转圈/ZQuanProject1.1/ZQuanProject/lib/libWeiboSDK/WBHttpRequest.h \
+  /Users/wyy/Desktop/转圈/ZQuanProject1.1/ZQuanProject/Macros/Macros.h \
+  /Users/wyy/Desktop/转圈/ZQuanProject1.1/ZQuanProject/Macros/APPConfig.h \
+  /Users/wyy/Desktop/转圈/ZQuanProject1.1/ZQuanProject/Tool/UIView+Additional.h \
+  /Users/wyy/Desktop/转圈/ZQuanProject1.1/ZQuanProject/Tool/MBProgressHUD/HDHud.h \
+  /Users/wyy/Desktop/转圈/ZQuanProject1.1/ZQuanProject/Tool/MBProgressHUD/MBProgressHUD.h \
+  /Users/wyy/Desktop/转圈/ZQuanProject1.1/ZQuanProject/Class/Plugins/H5Plugin.h \
+  /Users/wyy/Desktop/转圈/ZQuanProject1.1/ZQuanProject/Class/ZQUIWebViewController.h \
+  /Users/wyy/Desktop/转圈/ZQuanProject1.1/ZQuanProject/ViewController.h \
+  /Users/wyy/Desktop/转圈/ZQuanProject1.1/ZQuanProject/Base/BaseViewController.h \
+  /Users/wyy/Desktop/转圈/ZQuanProject1.1/ZQuanProject/Tool/Helper.h \
+  /Users/wyy/Desktop/转圈/ZQuanProject1.1/ZQuanProject/Class/HTTPCache.h \
+  /Users/wyy/Desktop/转圈/ZQuanProject1.1/Build/Products/Debug-iphonesimulator/KTVHTTPCache/KTVHTTPCache.framework/Headers/KTVHTTPCache.h \
+  /Users/wyy/Desktop/转圈/ZQuanProject1.1/Build/Products/Debug-iphonesimulator/KTVHTTPCache/KTVHTTPCache.framework/Headers/KTVHTTPCacheImp.h \
+  /Users/wyy/Desktop/转圈/ZQuanProject1.1/Build/Products/Debug-iphonesimulator/KTVHTTPCache/KTVHTTPCache.framework/Headers/KTVHCDataReader.h \
+  /Users/wyy/Desktop/转圈/ZQuanProject1.1/Build/Products/Debug-iphonesimulator/KTVHTTPCache/KTVHTTPCache.framework/Headers/KTVHCDataRequest.h \
+  /Users/wyy/Desktop/转圈/ZQuanProject1.1/Build/Products/Debug-iphonesimulator/KTVHTTPCache/KTVHTTPCache.framework/Headers/KTVHCCommon.h \
+  /Users/wyy/Desktop/转圈/ZQuanProject1.1/Build/Products/Debug-iphonesimulator/KTVHTTPCache/KTVHTTPCache.framework/Headers/KTVHCDataResponse.h \
+  /Users/wyy/Desktop/转圈/ZQuanProject1.1/Build/Products/Debug-iphonesimulator/KTVHTTPCache/KTVHTTPCache.framework/Headers/KTVHCDataCacheItem.h \
+  /Users/wyy/Desktop/转圈/ZQuanProject1.1/Build/Products/Debug-iphonesimulator/KTVHTTPCache/KTVHTTPCache.framework/Headers/KTVHCDataCacheItemZone.h

@@ -4,7 +4,7 @@
   'roots': [
     {
       'type': 'directory',
-      'name': "/Users/wyy/Desktop/\u8F6C\u5708/ZQuanProject1.1/Build/Products/Debug-iphoneos/AFNetworking/AFNetworking.framework/Headers",
+      'name': "/Users/wyy/Desktop/\u8F6C\u5708/ZQuanProject1.1/Build/Products/Debug-iphonesimulator/AFNetworking/AFNetworking.framework/Headers",
       'contents': [
         {
           'type': 'file',
@@ -34,7 +34,7 @@
         {
           'type': 'file',
           'name': "AFNetworking-Swift.h",
-          'external-contents': "/Users/wyy/Desktop/\u8F6C\u5708/ZQuanProject1.1/Build/Products/Debug-iphoneos/AFNetworking/AFNetworking.framework/Headers/AFNetworking-Swift.h"
+          'external-contents': "/Users/wyy/Desktop/\u8F6C\u5708/ZQuanProject1.1/Build/Products/Debug-iphonesimulator/AFNetworking/AFNetworking.framework/Headers/AFNetworking-Swift.h"
         },
         {
           'type': 'file',
@@ -110,18 +110,481 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/wyy/Desktop/\u8F6C\u5708/ZQuanProject1.1/Build/Products/Debug-iphoneos/AFNetworking/AFNetworking.framework/Modules",
+      'name': "/Users/wyy/Desktop/\u8F6C\u5708/ZQuanProject1.1/Build/Products/Debug-iphonesimulator/AFNetworking/AFNetworking.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/wyy/Desktop/\u8F6C\u5708/ZQuanProject1.1/Build/Intermediates/Pods.build/Debug-iphoneos/AFNetworking.build/module.modulemap"
+          'external-contents': "/Users/wyy/Desktop/\u8F6C\u5708/ZQuanProject1.1/Build/Intermediates/Pods.build/Debug-iphonesimulator/AFNetworking.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/wyy/Desktop/\u8F6C\u5708/ZQuanProject1.1/Build/Products/Debug-iphoneos/Pods_ZQuanProject.framework/Headers",
+      'name': "/Users/wyy/Desktop/\u8F6C\u5708/ZQuanProject1.1/Build/Products/Debug-iphonesimulator/CocoaAsyncSocket/CocoaAsyncSocket.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "CocoaAsyncSocket-Swift.h",
+          'external-contents': "/Users/wyy/Desktop/\u8F6C\u5708/ZQuanProject1.1/Build/Products/Debug-iphonesimulator/CocoaAsyncSocket/CocoaAsyncSocket.framework/Headers/CocoaAsyncSocket-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "CocoaAsyncSocket-umbrella.h",
+          'external-contents': "/Users/wyy/Desktop/\u8F6C\u5708/ZQuanProject1.1/Pods/Target Support Files/CocoaAsyncSocket/CocoaAsyncSocket-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "GCDAsyncSocket.h",
+          'external-contents': "/Users/wyy/Desktop/\u8F6C\u5708/ZQuanProject1.1/Pods/CocoaAsyncSocket/Source/GCD/GCDAsyncSocket.h"
+        },
+        {
+          'type': 'file',
+          'name': "GCDAsyncUdpSocket.h",
+          'external-contents': "/Users/wyy/Desktop/\u8F6C\u5708/ZQuanProject1.1/Pods/CocoaAsyncSocket/Source/GCD/GCDAsyncUdpSocket.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/wyy/Desktop/\u8F6C\u5708/ZQuanProject1.1/Build/Products/Debug-iphonesimulator/CocoaAsyncSocket/CocoaAsyncSocket.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/wyy/Desktop/\u8F6C\u5708/ZQuanProject1.1/Build/Intermediates/Pods.build/Debug-iphonesimulator/CocoaAsyncSocket.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/wyy/Desktop/\u8F6C\u5708/ZQuanProject1.1/Build/Products/Debug-iphonesimulator/CocoaHTTPServer/CocoaHTTPServer.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "CocoaHTTPServer-Swift.h",
+          'external-contents': "/Users/wyy/Desktop/\u8F6C\u5708/ZQuanProject1.1/Build/Products/Debug-iphonesimulator/CocoaHTTPServer/CocoaHTTPServer.framework/Headers/CocoaHTTPServer-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "CocoaHTTPServer-umbrella.h",
+          'external-contents': "/Users/wyy/Desktop/\u8F6C\u5708/ZQuanProject1.1/Pods/Target Support Files/CocoaHTTPServer/CocoaHTTPServer-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "DAVConnection.h",
+          'external-contents': "/Users/wyy/Desktop/\u8F6C\u5708/ZQuanProject1.1/Pods/CocoaHTTPServer/Extensions/WebDAV/DAVConnection.h"
+        },
+        {
+          'type': 'file',
+          'name': "DAVResponse.h",
+          'external-contents': "/Users/wyy/Desktop/\u8F6C\u5708/ZQuanProject1.1/Pods/CocoaHTTPServer/Extensions/WebDAV/DAVResponse.h"
+        },
+        {
+          'type': 'file',
+          'name': "DDData.h",
+          'external-contents': "/Users/wyy/Desktop/\u8F6C\u5708/ZQuanProject1.1/Pods/CocoaHTTPServer/Core/Categories/DDData.h"
+        },
+        {
+          'type': 'file',
+          'name': "DDNumber.h",
+          'external-contents': "/Users/wyy/Desktop/\u8F6C\u5708/ZQuanProject1.1/Pods/CocoaHTTPServer/Core/Categories/DDNumber.h"
+        },
+        {
+          'type': 'file',
+          'name': "DDRange.h",
+          'external-contents': "/Users/wyy/Desktop/\u8F6C\u5708/ZQuanProject1.1/Pods/CocoaHTTPServer/Core/Categories/DDRange.h"
+        },
+        {
+          'type': 'file',
+          'name': "DELETEResponse.h",
+          'external-contents': "/Users/wyy/Desktop/\u8F6C\u5708/ZQuanProject1.1/Pods/CocoaHTTPServer/Extensions/WebDAV/DELETEResponse.h"
+        },
+        {
+          'type': 'file',
+          'name': "HTTPAsyncFileResponse.h",
+          'external-contents': "/Users/wyy/Desktop/\u8F6C\u5708/ZQuanProject1.1/Pods/CocoaHTTPServer/Core/Responses/HTTPAsyncFileResponse.h"
+        },
+        {
+          'type': 'file',
+          'name': "HTTPAuthenticationRequest.h",
+          'external-contents': "/Users/wyy/Desktop/\u8F6C\u5708/ZQuanProject1.1/Pods/CocoaHTTPServer/Core/HTTPAuthenticationRequest.h"
+        },
+        {
+          'type': 'file',
+          'name': "HTTPConnection.h",
+          'external-contents': "/Users/wyy/Desktop/\u8F6C\u5708/ZQuanProject1.1/Pods/CocoaHTTPServer/Core/HTTPConnection.h"
+        },
+        {
+          'type': 'file',
+          'name': "HTTPDataResponse.h",
+          'external-contents': "/Users/wyy/Desktop/\u8F6C\u5708/ZQuanProject1.1/Pods/CocoaHTTPServer/Core/Responses/HTTPDataResponse.h"
+        },
+        {
+          'type': 'file',
+          'name': "HTTPDynamicFileResponse.h",
+          'external-contents': "/Users/wyy/Desktop/\u8F6C\u5708/ZQuanProject1.1/Pods/CocoaHTTPServer/Core/Responses/HTTPDynamicFileResponse.h"
+        },
+        {
+          'type': 'file',
+          'name': "HTTPFileResponse.h",
+          'external-contents': "/Users/wyy/Desktop/\u8F6C\u5708/ZQuanProject1.1/Pods/CocoaHTTPServer/Core/Responses/HTTPFileResponse.h"
+        },
+        {
+          'type': 'file',
+          'name': "HTTPLogging.h",
+          'external-contents': "/Users/wyy/Desktop/\u8F6C\u5708/ZQuanProject1.1/Pods/CocoaHTTPServer/Core/HTTPLogging.h"
+        },
+        {
+          'type': 'file',
+          'name': "HTTPMessage.h",
+          'external-contents': "/Users/wyy/Desktop/\u8F6C\u5708/ZQuanProject1.1/Pods/CocoaHTTPServer/Core/HTTPMessage.h"
+        },
+        {
+          'type': 'file',
+          'name': "HTTPRedirectResponse.h",
+          'external-contents': "/Users/wyy/Desktop/\u8F6C\u5708/ZQuanProject1.1/Pods/CocoaHTTPServer/Core/Responses/HTTPRedirectResponse.h"
+        },
+        {
+          'type': 'file',
+          'name': "HTTPResponse.h",
+          'external-contents': "/Users/wyy/Desktop/\u8F6C\u5708/ZQuanProject1.1/Pods/CocoaHTTPServer/Core/HTTPResponse.h"
+        },
+        {
+          'type': 'file',
+          'name': "HTTPServer.h",
+          'external-contents': "/Users/wyy/Desktop/\u8F6C\u5708/ZQuanProject1.1/Pods/CocoaHTTPServer/Core/HTTPServer.h"
+        },
+        {
+          'type': 'file',
+          'name': "MultipartFormDataParser.h",
+          'external-contents': "/Users/wyy/Desktop/\u8F6C\u5708/ZQuanProject1.1/Pods/CocoaHTTPServer/Core/Mime/MultipartFormDataParser.h"
+        },
+        {
+          'type': 'file',
+          'name': "MultipartMessageHeader.h",
+          'external-contents': "/Users/wyy/Desktop/\u8F6C\u5708/ZQuanProject1.1/Pods/CocoaHTTPServer/Core/Mime/MultipartMessageHeader.h"
+        },
+        {
+          'type': 'file',
+          'name': "MultipartMessageHeaderField.h",
+          'external-contents': "/Users/wyy/Desktop/\u8F6C\u5708/ZQuanProject1.1/Pods/CocoaHTTPServer/Core/Mime/MultipartMessageHeaderField.h"
+        },
+        {
+          'type': 'file',
+          'name': "PUTResponse.h",
+          'external-contents': "/Users/wyy/Desktop/\u8F6C\u5708/ZQuanProject1.1/Pods/CocoaHTTPServer/Extensions/WebDAV/PUTResponse.h"
+        },
+        {
+          'type': 'file',
+          'name': "WebSocket.h",
+          'external-contents': "/Users/wyy/Desktop/\u8F6C\u5708/ZQuanProject1.1/Pods/CocoaHTTPServer/Core/WebSocket.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/wyy/Desktop/\u8F6C\u5708/ZQuanProject1.1/Build/Products/Debug-iphonesimulator/CocoaHTTPServer/CocoaHTTPServer.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/wyy/Desktop/\u8F6C\u5708/ZQuanProject1.1/Build/Intermediates/Pods.build/Debug-iphonesimulator/CocoaHTTPServer.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/wyy/Desktop/\u8F6C\u5708/ZQuanProject1.1/Build/Products/Debug-iphonesimulator/CocoaLumberjack/CocoaLumberjack.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "CocoaLumberjack-Swift.h",
+          'external-contents': "/Users/wyy/Desktop/\u8F6C\u5708/ZQuanProject1.1/Build/Products/Debug-iphonesimulator/CocoaLumberjack/CocoaLumberjack.framework/Headers/CocoaLumberjack-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "CocoaLumberjack-umbrella.h",
+          'external-contents': "/Users/wyy/Desktop/\u8F6C\u5708/ZQuanProject1.1/Pods/Target Support Files/CocoaLumberjack/CocoaLumberjack-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "CocoaLumberjack.h",
+          'external-contents': "/Users/wyy/Desktop/\u8F6C\u5708/ZQuanProject1.1/Pods/CocoaLumberjack/Classes/CocoaLumberjack.h"
+        },
+        {
+          'type': 'file',
+          'name': "DDASLLogCapture.h",
+          'external-contents': "/Users/wyy/Desktop/\u8F6C\u5708/ZQuanProject1.1/Pods/CocoaLumberjack/Classes/DDASLLogCapture.h"
+        },
+        {
+          'type': 'file',
+          'name': "DDASLLogger.h",
+          'external-contents': "/Users/wyy/Desktop/\u8F6C\u5708/ZQuanProject1.1/Pods/CocoaLumberjack/Classes/DDASLLogger.h"
+        },
+        {
+          'type': 'file',
+          'name': "DDAbstractDatabaseLogger.h",
+          'external-contents': "/Users/wyy/Desktop/\u8F6C\u5708/ZQuanProject1.1/Pods/CocoaLumberjack/Classes/DDAbstractDatabaseLogger.h"
+        },
+        {
+          'type': 'file',
+          'name': "DDAssertMacros.h",
+          'external-contents': "/Users/wyy/Desktop/\u8F6C\u5708/ZQuanProject1.1/Pods/CocoaLumberjack/Classes/DDAssertMacros.h"
+        },
+        {
+          'type': 'file',
+          'name': "DDContextFilterLogFormatter.h",
+          'external-contents': "/Users/wyy/Desktop/\u8F6C\u5708/ZQuanProject1.1/Pods/CocoaLumberjack/Classes/Extensions/DDContextFilterLogFormatter.h"
+        },
+        {
+          'type': 'file',
+          'name': "DDDispatchQueueLogFormatter.h",
+          'external-contents': "/Users/wyy/Desktop/\u8F6C\u5708/ZQuanProject1.1/Pods/CocoaLumberjack/Classes/Extensions/DDDispatchQueueLogFormatter.h"
+        },
+        {
+          'type': 'file',
+          'name': "DDFileLogger.h",
+          'external-contents': "/Users/wyy/Desktop/\u8F6C\u5708/ZQuanProject1.1/Pods/CocoaLumberjack/Classes/DDFileLogger.h"
+        },
+        {
+          'type': 'file',
+          'name': "DDLegacyMacros.h",
+          'external-contents': "/Users/wyy/Desktop/\u8F6C\u5708/ZQuanProject1.1/Pods/CocoaLumberjack/Classes/DDLegacyMacros.h"
+        },
+        {
+          'type': 'file',
+          'name': "DDLog+LOGV.h",
+          'external-contents': "/Users/wyy/Desktop/\u8F6C\u5708/ZQuanProject1.1/Pods/CocoaLumberjack/Classes/DDLog+LOGV.h"
+        },
+        {
+          'type': 'file',
+          'name': "DDLog.h",
+          'external-contents': "/Users/wyy/Desktop/\u8F6C\u5708/ZQuanProject1.1/Pods/CocoaLumberjack/Classes/DDLog.h"
+        },
+        {
+          'type': 'file',
+          'name': "DDLogMacros.h",
+          'external-contents': "/Users/wyy/Desktop/\u8F6C\u5708/ZQuanProject1.1/Pods/CocoaLumberjack/Classes/DDLogMacros.h"
+        },
+        {
+          'type': 'file',
+          'name': "DDMultiFormatter.h",
+          'external-contents': "/Users/wyy/Desktop/\u8F6C\u5708/ZQuanProject1.1/Pods/CocoaLumberjack/Classes/Extensions/DDMultiFormatter.h"
+        },
+        {
+          'type': 'file',
+          'name': "DDOSLogger.h",
+          'external-contents': "/Users/wyy/Desktop/\u8F6C\u5708/ZQuanProject1.1/Pods/CocoaLumberjack/Classes/DDOSLogger.h"
+        },
+        {
+          'type': 'file',
+          'name': "DDTTYLogger.h",
+          'external-contents': "/Users/wyy/Desktop/\u8F6C\u5708/ZQuanProject1.1/Pods/CocoaLumberjack/Classes/DDTTYLogger.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/wyy/Desktop/\u8F6C\u5708/ZQuanProject1.1/Build/Products/Debug-iphonesimulator/CocoaLumberjack/CocoaLumberjack.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/wyy/Desktop/\u8F6C\u5708/ZQuanProject1.1/Build/Intermediates/Pods.build/Debug-iphonesimulator/CocoaLumberjack.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/wyy/Desktop/\u8F6C\u5708/ZQuanProject1.1/Build/Products/Debug-iphonesimulator/KTVHTTPCache/KTVHTTPCache.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "KTVHCCommon.h",
+          'external-contents': "/Users/wyy/Desktop/\u8F6C\u5708/ZQuanProject1.1/Pods/KTVHTTPCache/KTVHTTPCache/Classes/KTVHCCommon/KTVHCCommon.h"
+        },
+        {
+          'type': 'file',
+          'name': "KTVHCDataCacheItem.h",
+          'external-contents': "/Users/wyy/Desktop/\u8F6C\u5708/ZQuanProject1.1/Pods/KTVHTTPCache/KTVHTTPCache/Classes/KTVHCDataStorage/KTVHCDataCacheItem.h"
+        },
+        {
+          'type': 'file',
+          'name': "KTVHCDataCacheItemZone.h",
+          'external-contents': "/Users/wyy/Desktop/\u8F6C\u5708/ZQuanProject1.1/Pods/KTVHTTPCache/KTVHTTPCache/Classes/KTVHCDataStorage/KTVHCDataCacheItemZone.h"
+        },
+        {
+          'type': 'file',
+          'name': "KTVHCDataCallback.h",
+          'external-contents': "/Users/wyy/Desktop/\u8F6C\u5708/ZQuanProject1.1/Pods/KTVHTTPCache/KTVHTTPCache/Classes/KTVHCDataStorage/KTVHCDataCallback.h"
+        },
+        {
+          'type': 'file',
+          'name': "KTVHCDataFileSource.h",
+          'external-contents': "/Users/wyy/Desktop/\u8F6C\u5708/ZQuanProject1.1/Pods/KTVHTTPCache/KTVHTTPCache/Classes/KTVHCDataStorage/KTVHCDataFileSource.h"
+        },
+        {
+          'type': 'file',
+          'name': "KTVHCDataNetworkSource.h",
+          'external-contents': "/Users/wyy/Desktop/\u8F6C\u5708/ZQuanProject1.1/Pods/KTVHTTPCache/KTVHTTPCache/Classes/KTVHCDataStorage/KTVHCDataNetworkSource.h"
+        },
+        {
+          'type': 'file',
+          'name': "KTVHCDataPrivate.h",
+          'external-contents': "/Users/wyy/Desktop/\u8F6C\u5708/ZQuanProject1.1/Pods/KTVHTTPCache/KTVHTTPCache/Classes/KTVHCDataStorage/KTVHCDataPrivate.h"
+        },
+        {
+          'type': 'file',
+          'name': "KTVHCDataReader.h",
+          'external-contents': "/Users/wyy/Desktop/\u8F6C\u5708/ZQuanProject1.1/Pods/KTVHTTPCache/KTVHTTPCache/Classes/KTVHCDataStorage/KTVHCDataReader.h"
+        },
+        {
+          'type': 'file',
+          'name': "KTVHCDataRequest.h",
+          'external-contents': "/Users/wyy/Desktop/\u8F6C\u5708/ZQuanProject1.1/Pods/KTVHTTPCache/KTVHTTPCache/Classes/KTVHCDataStorage/KTVHCDataRequest.h"
+        },
+        {
+          'type': 'file',
+          'name': "KTVHCDataResponse.h",
+          'external-contents': "/Users/wyy/Desktop/\u8F6C\u5708/ZQuanProject1.1/Pods/KTVHTTPCache/KTVHTTPCache/Classes/KTVHCDataStorage/KTVHCDataResponse.h"
+        },
+        {
+          'type': 'file',
+          'name': "KTVHCDataSourceProtocol.h",
+          'external-contents': "/Users/wyy/Desktop/\u8F6C\u5708/ZQuanProject1.1/Pods/KTVHTTPCache/KTVHTTPCache/Classes/KTVHCDataStorage/KTVHCDataSourceProtocol.h"
+        },
+        {
+          'type': 'file',
+          'name': "KTVHCDataSourceQueue.h",
+          'external-contents': "/Users/wyy/Desktop/\u8F6C\u5708/ZQuanProject1.1/Pods/KTVHTTPCache/KTVHTTPCache/Classes/KTVHCDataStorage/KTVHCDataSourceQueue.h"
+        },
+        {
+          'type': 'file',
+          'name': "KTVHCDataSourcer.h",
+          'external-contents': "/Users/wyy/Desktop/\u8F6C\u5708/ZQuanProject1.1/Pods/KTVHTTPCache/KTVHTTPCache/Classes/KTVHCDataStorage/KTVHCDataSourcer.h"
+        },
+        {
+          'type': 'file',
+          'name': "KTVHCDataStorage.h",
+          'external-contents': "/Users/wyy/Desktop/\u8F6C\u5708/ZQuanProject1.1/Pods/KTVHTTPCache/KTVHTTPCache/Classes/KTVHCDataStorage/KTVHCDataStorage.h"
+        },
+        {
+          'type': 'file',
+          'name': "KTVHCDataUnit.h",
+          'external-contents': "/Users/wyy/Desktop/\u8F6C\u5708/ZQuanProject1.1/Pods/KTVHTTPCache/KTVHTTPCache/Classes/KTVHCDataStorage/KTVHCDataUnit.h"
+        },
+        {
+          'type': 'file',
+          'name': "KTVHCDataUnitItem.h",
+          'external-contents': "/Users/wyy/Desktop/\u8F6C\u5708/ZQuanProject1.1/Pods/KTVHTTPCache/KTVHTTPCache/Classes/KTVHCDataStorage/KTVHCDataUnitItem.h"
+        },
+        {
+          'type': 'file',
+          'name': "KTVHCDataUnitPool.h",
+          'external-contents': "/Users/wyy/Desktop/\u8F6C\u5708/ZQuanProject1.1/Pods/KTVHTTPCache/KTVHTTPCache/Classes/KTVHCDataStorage/KTVHCDataUnitPool.h"
+        },
+        {
+          'type': 'file',
+          'name': "KTVHCDataUnitQueue.h",
+          'external-contents': "/Users/wyy/Desktop/\u8F6C\u5708/ZQuanProject1.1/Pods/KTVHTTPCache/KTVHTTPCache/Classes/KTVHCDataStorage/KTVHCDataUnitQueue.h"
+        },
+        {
+          'type': 'file',
+          'name': "KTVHCDownload.h",
+          'external-contents': "/Users/wyy/Desktop/\u8F6C\u5708/ZQuanProject1.1/Pods/KTVHTTPCache/KTVHTTPCache/Classes/KTVHCDownload/KTVHCDownload.h"
+        },
+        {
+          'type': 'file',
+          'name': "KTVHCError.h",
+          'external-contents': "/Users/wyy/Desktop/\u8F6C\u5708/ZQuanProject1.1/Pods/KTVHTTPCache/KTVHTTPCache/Classes/KTVHCCommon/KTVHCError.h"
+        },
+        {
+          'type': 'file',
+          'name': "KTVHCHTTPConnection.h",
+          'external-contents': "/Users/wyy/Desktop/\u8F6C\u5708/ZQuanProject1.1/Pods/KTVHTTPCache/KTVHTTPCache/Classes/KTVHCHTTPServer/KTVHCHTTPConnection.h"
+        },
+        {
+          'type': 'file',
+          'name': "KTVHCHTTPHeader.h",
+          'external-contents': "/Users/wyy/Desktop/\u8F6C\u5708/ZQuanProject1.1/Pods/KTVHTTPCache/KTVHTTPCache/Classes/KTVHCHTTPServer/KTVHCHTTPHeader.h"
+        },
+        {
+          'type': 'file',
+          'name': "KTVHCHTTPRequest.h",
+          'external-contents': "/Users/wyy/Desktop/\u8F6C\u5708/ZQuanProject1.1/Pods/KTVHTTPCache/KTVHTTPCache/Classes/KTVHCHTTPServer/KTVHCHTTPRequest.h"
+        },
+        {
+          'type': 'file',
+          'name': "KTVHCHTTPResponse.h",
+          'external-contents': "/Users/wyy/Desktop/\u8F6C\u5708/ZQuanProject1.1/Pods/KTVHTTPCache/KTVHTTPCache/Classes/KTVHCHTTPServer/KTVHCHTTPResponse.h"
+        },
+        {
+          'type': 'file',
+          'name': "KTVHCHTTPResponsePing.h",
+          'external-contents': "/Users/wyy/Desktop/\u8F6C\u5708/ZQuanProject1.1/Pods/KTVHTTPCache/KTVHTTPCache/Classes/KTVHCHTTPServer/KTVHCHTTPResponsePing.h"
+        },
+        {
+          'type': 'file',
+          'name': "KTVHCHTTPServer.h",
+          'external-contents': "/Users/wyy/Desktop/\u8F6C\u5708/ZQuanProject1.1/Pods/KTVHTTPCache/KTVHTTPCache/Classes/KTVHCHTTPServer/KTVHCHTTPServer.h"
+        },
+        {
+          'type': 'file',
+          'name': "KTVHCHTTPURL.h",
+          'external-contents': "/Users/wyy/Desktop/\u8F6C\u5708/ZQuanProject1.1/Pods/KTVHTTPCache/KTVHTTPCache/Classes/KTVHCHTTPServer/KTVHCHTTPURL.h"
+        },
+        {
+          'type': 'file',
+          'name': "KTVHCLog.h",
+          'external-contents': "/Users/wyy/Desktop/\u8F6C\u5708/ZQuanProject1.1/Pods/KTVHTTPCache/KTVHTTPCache/Classes/KTVHCCommon/KTVHCLog.h"
+        },
+        {
+          'type': 'file',
+          'name': "KTVHCPathTools.h",
+          'external-contents': "/Users/wyy/Desktop/\u8F6C\u5708/ZQuanProject1.1/Pods/KTVHTTPCache/KTVHTTPCache/Classes/KTVHCTools/KTVHCPathTools.h"
+        },
+        {
+          'type': 'file',
+          'name': "KTVHCURLTools.h",
+          'external-contents': "/Users/wyy/Desktop/\u8F6C\u5708/ZQuanProject1.1/Pods/KTVHTTPCache/KTVHTTPCache/Classes/KTVHCTools/KTVHCURLTools.h"
+        },
+        {
+          'type': 'file',
+          'name': "KTVHTTPCache-Swift.h",
+          'external-contents': "/Users/wyy/Desktop/\u8F6C\u5708/ZQuanProject1.1/Build/Products/Debug-iphonesimulator/KTVHTTPCache/KTVHTTPCache.framework/Headers/KTVHTTPCache-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "KTVHTTPCache-umbrella.h",
+          'external-contents': "/Users/wyy/Desktop/\u8F6C\u5708/ZQuanProject1.1/Pods/Target Support Files/KTVHTTPCache/KTVHTTPCache-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "KTVHTTPCache.h",
+          'external-contents': "/Users/wyy/Desktop/\u8F6C\u5708/ZQuanProject1.1/Pods/KTVHTTPCache/KTVHTTPCache/KTVHTTPCache.h"
+        },
+        {
+          'type': 'file',
+          'name': "KTVHTTPCacheImp.h",
+          'external-contents': "/Users/wyy/Desktop/\u8F6C\u5708/ZQuanProject1.1/Pods/KTVHTTPCache/KTVHTTPCache/Classes/KTVHTTPCacheImp.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/wyy/Desktop/\u8F6C\u5708/ZQuanProject1.1/Build/Products/Debug-iphonesimulator/KTVHTTPCache/KTVHTTPCache.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/wyy/Desktop/\u8F6C\u5708/ZQuanProject1.1/Build/Intermediates/Pods.build/Debug-iphonesimulator/KTVHTTPCache.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/wyy/Desktop/\u8F6C\u5708/ZQuanProject1.1/Build/Products/Debug-iphonesimulator/Pods_ZQuanProject.framework/Headers",
       'contents': [
         {
           'type': 'file',
@@ -131,29 +594,29 @@
         {
           'type': 'file',
           'name': "Pods_ZQuanProject-Swift.h",
-          'external-contents': "/Users/wyy/Desktop/\u8F6C\u5708/ZQuanProject1.1/Build/Products/Debug-iphoneos/Pods_ZQuanProject.framework/Headers/Pods_ZQuanProject-Swift.h"
+          'external-contents': "/Users/wyy/Desktop/\u8F6C\u5708/ZQuanProject1.1/Build/Products/Debug-iphonesimulator/Pods_ZQuanProject.framework/Headers/Pods_ZQuanProject-Swift.h"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/wyy/Desktop/\u8F6C\u5708/ZQuanProject1.1/Build/Products/Debug-iphoneos/Pods_ZQuanProject.framework/Modules",
+      'name': "/Users/wyy/Desktop/\u8F6C\u5708/ZQuanProject1.1/Build/Products/Debug-iphonesimulator/Pods_ZQuanProject.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/wyy/Desktop/\u8F6C\u5708/ZQuanProject1.1/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-ZQuanProject.build/module.modulemap"
+          'external-contents': "/Users/wyy/Desktop/\u8F6C\u5708/ZQuanProject1.1/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-ZQuanProject.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/wyy/Desktop/\u8F6C\u5708/ZQuanProject1.1/Build/Products/Debug-iphoneos/SSZipArchive/SSZipArchive.framework/Headers",
+      'name': "/Users/wyy/Desktop/\u8F6C\u5708/ZQuanProject1.1/Build/Products/Debug-iphonesimulator/SSZipArchive/SSZipArchive.framework/Headers",
       'contents': [
         {
           'type': 'file',
           'name': "SSZipArchive-Swift.h",
-          'external-contents': "/Users/wyy/Desktop/\u8F6C\u5708/ZQuanProject1.1/Build/Products/Debug-iphoneos/SSZipArchive/SSZipArchive.framework/Headers/SSZipArchive-Swift.h"
+          'external-contents': "/Users/wyy/Desktop/\u8F6C\u5708/ZQuanProject1.1/Build/Products/Debug-iphonesimulator/SSZipArchive/SSZipArchive.framework/Headers/SSZipArchive-Swift.h"
         },
         {
           'type': 'file',
@@ -179,12 +642,12 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/wyy/Desktop/\u8F6C\u5708/ZQuanProject1.1/Build/Products/Debug-iphoneos/SSZipArchive/SSZipArchive.framework/Modules",
+      'name': "/Users/wyy/Desktop/\u8F6C\u5708/ZQuanProject1.1/Build/Products/Debug-iphonesimulator/SSZipArchive/SSZipArchive.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/wyy/Desktop/\u8F6C\u5708/ZQuanProject1.1/Build/Intermediates/Pods.build/Debug-iphoneos/SSZipArchive.build/module.modulemap"
+          'external-contents': "/Users/wyy/Desktop/\u8F6C\u5708/ZQuanProject1.1/Build/Intermediates/Pods.build/Debug-iphonesimulator/SSZipArchive.build/module.modulemap"
         }
       ]
     }

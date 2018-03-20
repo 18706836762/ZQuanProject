@@ -10,6 +10,7 @@
 		6082EA1B1FFE0CC00052EB0B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6082EA1A1FFE0CC00052EB0B /* InfoPlist.strings */; };
 		60C4B6EA1FF6725400EE8A89 /* LoginPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 60C4B6E91FF6725400EE8A89 /* LoginPlugin.m */; };
 		7519ADB92046A44E00C30B0C /* UnzipManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7519ADB82046A44E00C30B0C /* UnzipManager.m */; };
+		75239BBB2057E1B70062E1FF /* MediaPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 75239BBA2057E1B70062E1FF /* MediaPlugin.m */; };
 		75A2245D1FDF8CF5005E28B2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 75A2245C1FDF8CF5005E28B2 /* AppDelegate.m */; };
 		75A224601FDF8CF5005E28B2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75A2245F1FDF8CF5005E28B2 /* ViewController.m */; };
 		75A224631FDF8CF6005E28B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75A224611FDF8CF6005E28B2 /* Main.storyboard */; };
@@ -20,6 +21,8 @@
 		75A224801FDF8CF7005E28B2 /* ZQuanProjectUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 75A2247F1FDF8CF7005E28B2 /* ZQuanProjectUITests.m */; };
 		75A2249B1FDF9781005E28B2 /* UIView+Additional.m in Sources */ = {isa = PBXBuildFile; fileRef = 75A224991FDF9781005E28B2 /* UIView+Additional.m */; };
 		75A224A11FDF98C1005E28B2 /* ZQLaunchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75A224A01FDF98C1005E28B2 /* ZQLaunchViewController.m */; };
+		75B4B54B2060ABB900BF43AE /* MediaManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 75B4B54A2060ABB900BF43AE /* MediaManager.m */; };
+		75B4B5502060B01600BF43AE /* HTTPCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 75B4B54F2060B01600BF43AE /* HTTPCache.m */; };
 		75C527FD1FE13C1B000230DD /* Helper+Cache.m in Sources */ = {isa = PBXBuildFile; fileRef = 75C527FC1FE13C1A000230DD /* Helper+Cache.m */; };
 		75C528041FE148AC000230DD /* GradientProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 75C528031FE148AC000230DD /* GradientProgressView.m */; };
 		75E80A89204924D500667839 /* JZNetObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 75E80A85204924D400667839 /* JZNetObserver.m */; };
@@ -126,6 +129,8 @@
 		60C4B6E91FF6725400EE8A89 /* LoginPlugin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginPlugin.m; sourceTree = "<group>"; };
 		7519ADB72046A44E00C30B0C /* UnzipManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UnzipManager.h; sourceTree = "<group>"; };
 		7519ADB82046A44E00C30B0C /* UnzipManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UnzipManager.m; sourceTree = "<group>"; };
+		75239BB92057E1B70062E1FF /* MediaPlugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MediaPlugin.h; sourceTree = "<group>"; };
+		75239BBA2057E1B70062E1FF /* MediaPlugin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MediaPlugin.m; sourceTree = "<group>"; };
 		75A224581FDF8CF5005E28B2 /* ZQuanProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZQuanProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75A2245B1FDF8CF5005E28B2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		75A2245C1FDF8CF5005E28B2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -148,6 +153,10 @@
 		75A224A01FDF98C1005E28B2 /* ZQLaunchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZQLaunchViewController.m; sourceTree = "<group>"; };
 		75A224B51FDFA176005E28B2 /* Macros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Macros.h; sourceTree = "<group>"; };
 		75A224B61FDFA33C005E28B2 /* ZQuanProject-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ZQuanProject-Prefix.pch"; sourceTree = "<group>"; };
+		75B4B5492060ABB800BF43AE /* MediaManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaManager.h; sourceTree = "<group>"; };
+		75B4B54A2060ABB900BF43AE /* MediaManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MediaManager.m; sourceTree = "<group>"; };
+		75B4B54E2060B01600BF43AE /* HTTPCache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HTTPCache.h; sourceTree = "<group>"; };
+		75B4B54F2060B01600BF43AE /* HTTPCache.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HTTPCache.m; sourceTree = "<group>"; };
 		75C527FB1FE13C1A000230DD /* Helper+Cache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Helper+Cache.h"; sourceTree = "<group>"; };
 		75C527FC1FE13C1A000230DD /* Helper+Cache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Helper+Cache.m"; sourceTree = "<group>"; };
 		75C527FE1FE14078000230DD /* APPConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APPConfig.h; sourceTree = "<group>"; };
@@ -448,6 +457,10 @@
 				FCE5CED81FEBC50000CEEDA6 /* ZQWebVCSingleton.m */,
 				FCBEE0E7202320040087D927 /* ZQLayoutModel.h */,
 				FCBEE0E8202320040087D927 /* ZQLayoutModel.m */,
+				75B4B5492060ABB800BF43AE /* MediaManager.h */,
+				75B4B54A2060ABB900BF43AE /* MediaManager.m */,
+				75B4B54E2060B01600BF43AE /* HTTPCache.h */,
+				75B4B54F2060B01600BF43AE /* HTTPCache.m */,
 			);
 			path = Class;
 			sourceTree = "<group>";
@@ -557,6 +570,8 @@
 				FC974D3020286B0A009A0271 /* SetCachePlugin.m */,
 				FC974D3220286B2F009A0271 /* GetCachePlugin.h */,
 				FC974D3320286B2F009A0271 /* GetCachePlugin.m */,
+				75239BB92057E1B70062E1FF /* MediaPlugin.h */,
+				75239BBA2057E1B70062E1FF /* MediaPlugin.m */,
 			);
 			path = Plugins;
 			sourceTree = "<group>";
@@ -829,11 +844,19 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-ZQuanProject/Pods-ZQuanProject-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/CocoaAsyncSocket/CocoaAsyncSocket.framework",
+				"${BUILT_PRODUCTS_DIR}/CocoaHTTPServer/CocoaHTTPServer.framework",
+				"${BUILT_PRODUCTS_DIR}/CocoaLumberjack/CocoaLumberjack.framework",
+				"${BUILT_PRODUCTS_DIR}/KTVHTTPCache/KTVHTTPCache.framework",
 				"${BUILT_PRODUCTS_DIR}/SSZipArchive/SSZipArchive.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaAsyncSocket.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaHTTPServer.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaLumberjack.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KTVHTTPCache.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SSZipArchive.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -881,6 +904,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75B4B5502060B01600BF43AE /* HTTPCache.m in Sources */,
 				FC13F9881FE60CD10009499E /* WebNSURLProtocol.m in Sources */,
 				FC13F9DA1FE77DB10009499E /* PopWindowPlugin.m in Sources */,
 				75E80A89204924D500667839 /* JZNetObserver.m in Sources */,
@@ -891,6 +915,7 @@
 				FCE5CDD31FEAAF7C00CEEDA6 /* EBBannerViewController.m in Sources */,
 				FC13F9E31FE77DF10009499E /* RefreshPlugin.m in Sources */,
 				75A2246B1FDF8CF6005E28B2 /* main.m in Sources */,
+				75239BBB2057E1B70062E1FF /* MediaPlugin.m in Sources */,
 				FC13F9B61FE77C9F0009499E /* ConfirmPlugin.m in Sources */,
 				FC13F9F81FE77E7C0009499E /* SetTitlePlugin.m in Sources */,
 				FC13FA071FE77EDC0009499E /* WeiboLoginPlugin.m in Sources */,
@@ -921,6 +946,7 @@
 				FCE5CDEF1FEB537000CEEDA6 /* WPhotoViewController.m in Sources */,
 				FC13F9DD1FE77DC40009499E /* PromptPlugin.m in Sources */,
 				FC13F9AD1FE7726D0009499E /* H5EventDispatcher.m in Sources */,
+				75B4B54B2060ABB900BF43AE /* MediaManager.m in Sources */,
 				FC13F98B1FE61A7B0009499E /* H5Plugin.m in Sources */,
 				FC974D3120286B0A009A0271 /* SetCachePlugin.m in Sources */,
 				FCE5CED91FEBC50000CEEDA6 /* ZQWebVCSingleton.m in Sources */,

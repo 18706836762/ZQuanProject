@@ -7,5 +7,5 @@ target 'ZQuanProject' do
     pod 'SSZipArchive'
     pod 'UMengAnalytics'
     pod 'Bugly'
-
+    pod 'KTVHTTPCache'
 end
