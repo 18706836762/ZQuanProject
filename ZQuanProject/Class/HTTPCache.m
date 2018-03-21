@@ -15,7 +15,7 @@
 
 + (void)setupHTTPCache
 {
-    [KTVHTTPCache logSetConsoleLogEnable:YES];
+    [KTVHTTPCache logSetConsoleLogEnable:NO];
     [HTTPCache startHTTPServer];
     [HTTPCache configurationFilters];
 }

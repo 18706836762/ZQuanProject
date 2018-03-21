@@ -16,6 +16,7 @@
 @interface MediaManager()
 
 @property(nonatomic,strong) AVPlayer *player;
+@property(nonatomic,strong)NSTimer *timer;
 @property(nonatomic,strong) id timeObserve;
 
 @end
@@ -44,7 +45,7 @@ static MediaManager *mediaManager;
         return;
     _prePlayerId = valueId;
     NSString *valueUrl = [NSString stringWithFormat:@"%@",value[@"url"]];
-    
+    _prePlayerUrl = valueUrl;
     NSString * proxyURLString = [KTVHTTPCache proxyURLStringWithOriginalURLString:valueUrl];
 
     [self setupPlayer:proxyURLString];
@@ -93,6 +94,7 @@ static MediaManager *mediaManager;
 -(void)releaseWithClientId:(NSString*)clientId;
 {
     _prePlayerId = nil;
+    _prePlayerUrl = nil;
     [_player cancelPendingPrerolls];
     [_player replaceCurrentItemWithPlayerItem:nil];
     _player = nil;
@@ -136,11 +138,10 @@ static MediaManager *mediaManager;
         [self playNextBeforOperate]; //切换下一首之前 释放掉通知及监听
         [_player replaceCurrentItemWithPlayerItem:songItem];
     }
-    
+    [self Runtimer];
     //添加播放器状态监听
     [songItem addObserver:self forKeyPath:@"status" options:NSKeyValueObservingOptionNew context:nil];
     
-    [songItem addObserver:self forKeyPath:@"loadedTimeRanges" options:NSKeyValueObservingOptionNew context:nil];
     //监听AVPlayer播放完成通知
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(playbackFinished:) name:AVPlayerItemDidPlayToEndTimeNotification object:songItem];
     
@@ -153,7 +154,7 @@ static MediaManager *mediaManager;
             float percent = current / duration;
             if(!IsEmptyStr(weakSelf.prePlayerId)&&[ZQWebVCSingleton shareInstance].webVC.webView!=nil){
                 NSDictionary *dict = @{@"id":weakSelf.prePlayerId,@"currentTime":@(current),@"duration":@(duration),@"percent":@(percent)};
-                NSLog(@"播放长度：%.2f, 总长度：%.2f, 百分比：%.2f",current,duration,percent);
+                //NSLog(@"播放长度：%.2f, 总长度：%.2f, 百分比：%.2f",current,duration,percent);
                 
                 NSString *jsonStr = [Helper covertStringWithJson:dict];
                 NSString *jsStr = [NSString stringWithFormat:@"ZhuanQuanJSBridge.emit('mediaTimeupdate',%@);",jsonStr];
@@ -195,18 +196,6 @@ static MediaManager *mediaManager;
             default:
                 break;
         }
-    }else if ([keyPath isEqualToString:@"loadedTimeRanges"]) {
-        AVPlayerItem * songItem = object;
-        NSArray * array = songItem.loadedTimeRanges;
-        CMTimeRange timeRange = [array.firstObject CMTimeRangeValue]; //本次缓冲的时间范围
-        NSTimeInterval totalBuffer = CMTimeGetSeconds(timeRange.start) + CMTimeGetSeconds(timeRange.duration); //缓冲总长度
-        float duration = CMTimeGetSeconds(songItem.duration);
-        float percent = totalBuffer / duration;
-        NSLog(@"缓冲长度：%.2f, 总长度：%.2f, 百分比：%.2f",totalBuffer,duration,percent);
-        NSDictionary *dict = @{@"id":_prePlayerId,@"position":@(totalBuffer),@"duration":@(duration),@"percent":@(percent)};
-        NSString *jsonStr = [Helper covertStringWithJson:dict];
-        NSString *jsStr = [NSString stringWithFormat:@"ZhuanQuanJSBridge.emit('mediaPrepared',%@);",jsonStr];
-        [[ZQWebVCSingleton shareInstance].webVC.webView stringByEvaluatingJavaScriptFromString:jsStr];
     }
 }
 
@@ -225,6 +214,46 @@ static MediaManager *mediaManager;
     [[ZQWebVCSingleton shareInstance].webVC.webView stringByEvaluatingJavaScriptFromString:jsStr];
 }
 
+#pragma mark-
+#pragma mark - Timer
+-(void)Runtimer
+{
+    if(_timer==nil){
+        _timer = [NSTimer timerWithTimeInterval:0.1 target:self selector:@selector(timerAction) userInfo:nil repeats:YES];
+        [[NSRunLoop mainRunLoop] addTimer:_timer forMode:NSDefaultRunLoopMode];
+    }
+}
+
+//缓存进度上传
+-(void)timerAction
+{
+    //手动创建一个自动释放池,循环运行完毕释放临时变量
+     @autoreleasepool {
+         KTVHCDataCacheItem *cacheItem = [KTVHTTPCache cacheFetchCacheItemWithURLString:_prePlayerUrl];
+         if(cacheItem.totalLength>0){
+             
+             NSMutableArray *zonesArr = [NSMutableArray array];
+             for(KTVHCDataCacheItemZone * zone in cacheItem.zones){
+                 NSDictionary *zoneDict = @{@"offset":@(zone.offset),@"length":@(zone.length)};
+                 [zonesArr addObject:zoneDict];
+             }
+             NSLog(@"totalLength:%lld,cacheLength:%lld,【%@】",cacheItem.totalLength,cacheItem.cacheLength,zonesArr);
+             
+             //上传数据
+             NSDictionary *dict = @{@"id":_prePlayerId,@"length":@(cacheItem.totalLength),@"cache":zonesArr};
+             NSString *jsonStr = [Helper covertStringWithJson:dict];
+             NSString *jsStr = [NSString stringWithFormat:@"ZhuanQuanJSBridge.emit('mediaPrepared',%@);",jsonStr];
+             [[ZQWebVCSingleton shareInstance].webVC.webView stringByEvaluatingJavaScriptFromString:jsStr];
+             
+             //缓存结束，销毁定时器
+             if(cacheItem.totalLength==cacheItem.cacheLength){
+                 [_timer invalidate];
+                 _timer = nil;
+             }
+         }
+     }
+}
+
 
 
 //播放下一首前，移除这个item的观察者等
@@ -234,17 +263,20 @@ static MediaManager *mediaManager;
         
         [_player.currentItem removeObserver:self forKeyPath:@"status"];
         
-        [_player.currentItem removeObserver:self forKeyPath:@"loadedTimeRanges"];
-        
         if (_timeObserve) {
             [_player removeTimeObserver:_timeObserve];
             _timeObserve = nil;
         }
+        if(_timer){
+            [_timer invalidate];
+        }
+        _timer = nil;
         [[NSNotificationCenter defaultCenter] removeObserver:self];
     }
 }
 
 
+//设置锁屏
 - (void)configNowPlayingCenter {
     
     NSMutableDictionary * info = [NSMutableDictionary dictionary];

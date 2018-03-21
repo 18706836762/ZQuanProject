@@ -13,6 +13,7 @@
 +(instancetype)shared;
 
 @property(nonatomic,strong)NSString *prePlayerId;
+@property(nonatomic,strong)NSString *prePlayerUrl;
 
 -(void)infoValue:(NSDictionary*)value ClientId:(NSString*)clientId;
 
