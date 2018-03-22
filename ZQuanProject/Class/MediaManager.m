@@ -60,7 +60,7 @@ static MediaManager *mediaManager;
     self.isPlaying = true;
     [self configNowPlayingCenter];
     
-    if(!IsEmptyStr(clientId)&&[ZQWebVCSingleton shareInstance].webVC.webView!=nil){
+    if(!IsEmptyStr(clientId)&&[ZQWebVCSingleton shareInstance].webVC.webView!=nil&&_prePlayerId!=nil){
         NSDictionary *dict = @{@"id":_prePlayerId};
         NSString *jsStr = [NSString stringWithFormat:@"javascript: ZhuanQuanJSBridge._invokeJS(\"%@\",%@);",clientId,[Helper covertStringWithJson:dict]];
         [[ZQWebVCSingleton shareInstance].webVC.webView stringByEvaluatingJavaScriptFromString:jsStr];
@@ -73,7 +73,7 @@ static MediaManager *mediaManager;
     [_player pause];
     self.isPlaying = false;
     
-    if(!IsEmptyStr(clientId)&&[ZQWebVCSingleton shareInstance].webVC.webView!=nil){
+    if(!IsEmptyStr(clientId)&&[ZQWebVCSingleton shareInstance].webVC.webView!=nil&&_prePlayerId!=nil){
         NSDictionary *dict = @{@"id":_prePlayerId};
         NSString *jsStr = [NSString stringWithFormat:@"javascript: ZhuanQuanJSBridge._invokeJS(\"%@\",%@);",clientId,[Helper covertStringWithJson:dict]];
         [[ZQWebVCSingleton shareInstance].webVC.webView stringByEvaluatingJavaScriptFromString:jsStr];
@@ -83,11 +83,15 @@ static MediaManager *mediaManager;
 
 -(void)stopWithClientId:(NSString*)clientId;
 {
+    _prePlayerId = nil;
+    _prePlayerUrl = nil;
     [_player seekToTime:kCMTimeZero];
     [_player pause];
+    [_player cancelPendingPrerolls];
+    [_player replaceCurrentItemWithPlayerItem:nil];
     self.isPlaying = false;
     
-    if(!IsEmptyStr(clientId)&&[ZQWebVCSingleton shareInstance].webVC.webView!=nil){
+    if(!IsEmptyStr(clientId)&&[ZQWebVCSingleton shareInstance].webVC.webView!=nil&&_prePlayerId!=nil){
         NSDictionary *dict = @{@"id":_prePlayerId};
         NSString *jsStr = [NSString stringWithFormat:@"javascript: ZhuanQuanJSBridge._invokeJS(\"%@\",%@);",clientId,[Helper covertStringWithJson:dict]];
         [[ZQWebVCSingleton shareInstance].webVC.webView stringByEvaluatingJavaScriptFromString:jsStr];
@@ -104,7 +108,7 @@ static MediaManager *mediaManager;
     _player = nil;
     self.isPlaying = false;
     
-    if(!IsEmptyStr(clientId)&&[ZQWebVCSingleton shareInstance].webVC.webView!=nil){
+    if(!IsEmptyStr(clientId)&&[ZQWebVCSingleton shareInstance].webVC.webView!=nil&&_prePlayerId!=nil){
         NSDictionary *dict = @{@"id":_prePlayerId};
         NSString *jsStr = [NSString stringWithFormat:@"javascript: ZhuanQuanJSBridge._invokeJS(\"%@\",%@);",clientId,[Helper covertStringWithJson:dict]];
         [[ZQWebVCSingleton shareInstance].webVC.webView stringByEvaluatingJavaScriptFromString:jsStr];
@@ -119,7 +123,7 @@ static MediaManager *mediaManager;
     cmtime.value = time;
     
     [_player seekToTime:cmtime completionHandler:^(BOOL finished) {
-        if(!IsEmptyStr(clientId)&&[ZQWebVCSingleton shareInstance].webVC.webView!=nil){
+        if(!IsEmptyStr(clientId)&&[ZQWebVCSingleton shareInstance].webVC.webView!=nil&&_prePlayerId!=nil){
             NSDictionary *dict = @{@"id":_prePlayerId};
             NSString *jsStr = [NSString stringWithFormat:@"javascript: ZhuanQuanJSBridge._invokeJS(\"%@\",%@);",clientId,[Helper covertStringWithJson:dict]];
             [[ZQWebVCSingleton shareInstance].webVC.webView stringByEvaluatingJavaScriptFromString:jsStr];
@@ -212,6 +216,7 @@ static MediaManager *mediaManager;
     CMTime cmtime = _player.currentTime;
     cmtime.value = 0;
     [_player seekToTime:cmtime];
+    [_player pause];
     self.isPlaying = false;
     
     NSDictionary *dict = @{@"id":_prePlayerId};
@@ -246,13 +251,19 @@ static MediaManager *mediaManager;
              NSLog(@"totalLength:%lld,cacheLength:%lld,【%@】",cacheItem.totalLength,cacheItem.cacheLength,zonesArr);
              
              //上传数据
-             NSDictionary *dict = @{@"id":_prePlayerId,@"length":@(cacheItem.totalLength),@"cache":zonesArr};
-             NSString *jsonStr = [Helper covertStringWithJson:dict];
-             NSString *jsStr = [NSString stringWithFormat:@"ZhuanQuanJSBridge.emit('mediaProgress',%@);",jsonStr];
-             [[ZQWebVCSingleton shareInstance].webVC.webView stringByEvaluatingJavaScriptFromString:jsStr];
-             
-             //缓存结束，销毁定时器
-             if(cacheItem.totalLength==cacheItem.cacheLength){
+             if(_prePlayerId!=nil){
+                 NSDictionary *dict = @{@"id":_prePlayerId,@"length":@(cacheItem.totalLength),@"cache":zonesArr};
+                 NSString *jsonStr = [Helper covertStringWithJson:dict];
+                 NSString *jsStr = [NSString stringWithFormat:@"ZhuanQuanJSBridge.emit('mediaProgress',%@);",jsonStr];
+                 [[ZQWebVCSingleton shareInstance].webVC.webView stringByEvaluatingJavaScriptFromString:jsStr];
+
+                 //缓存结束，销毁定时器
+                 if(cacheItem.totalLength==cacheItem.cacheLength){
+                     [_timer invalidate];
+                     _timer = nil;
+                 }
+             }
+             else {
                  [_timer invalidate];
                  _timer = nil;
              }
