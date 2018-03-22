@@ -118,9 +118,8 @@ static MediaManager *mediaManager;
 
 -(void)seekValue:(NSDictionary*)value ClientId:(NSString*)clientId;
 {
-    long time = [value[@"time"] longValue];
-    CMTime cmtime = _player.currentTime;
-    cmtime.value = time;
+    long time = [value[@"time"] longValue] / NSEC_PER_USEC;
+    CMTime cmtime = CMTimeMake(time, 1);
 
     [_player seekToTime:cmtime completionHandler:^(BOOL finished) {
         if(!IsEmptyStr(clientId)&&[ZQWebVCSingleton shareInstance].webVC.webView!=nil&&_prePlayerId!=nil){
