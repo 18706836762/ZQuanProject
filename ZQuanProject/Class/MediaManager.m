@@ -155,7 +155,7 @@ static MediaManager *mediaManager;
 
     //添加播放进度监听
     __weak MediaManager *weakSelf = self;
-    id timeObserve = [self.player addPeriodicTimeObserverForInterval:CMTimeMake(1.0, 1.0) queue:dispatch_get_main_queue() usingBlock:^(CMTime time) {
+    id timeObserve = [self.player addPeriodicTimeObserverForInterval:CMTimeMake(1.0, 5.0) queue:dispatch_get_main_queue() usingBlock:^(CMTime time) {
         float current = CMTimeGetSeconds(time) * NSEC_PER_USEC;
         float duration = CMTimeGetSeconds(songItem.duration) * NSEC_PER_USEC;
         if (current) {
