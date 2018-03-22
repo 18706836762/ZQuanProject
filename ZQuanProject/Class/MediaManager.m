@@ -18,6 +18,7 @@
 @property(nonatomic,strong) AVPlayer *player;
 @property(nonatomic,strong)NSTimer *timer;
 @property(nonatomic,strong) id timeObserve;
+@property (nonatomic, assign) BOOL isPlaying;
 
 @end
 
@@ -56,6 +57,7 @@ static MediaManager *mediaManager;
 {
     //继续播放当前歌曲
     [_player play];
+    self.isPlaying = true;
     [self configNowPlayingCenter];
     
     if(!IsEmptyStr(clientId)&&[ZQWebVCSingleton shareInstance].webVC.webView!=nil){
@@ -69,6 +71,7 @@ static MediaManager *mediaManager;
 -(void)pauseWithClientId:(NSString*)clientId;
 {
     [_player pause];
+    self.isPlaying = false;
     
     if(!IsEmptyStr(clientId)&&[ZQWebVCSingleton shareInstance].webVC.webView!=nil){
         NSDictionary *dict = @{@"id":_prePlayerId};
@@ -82,6 +85,7 @@ static MediaManager *mediaManager;
 {
     [_player seekToTime:kCMTimeZero];
     [_player pause];
+    self.isPlaying = false;
     
     if(!IsEmptyStr(clientId)&&[ZQWebVCSingleton shareInstance].webVC.webView!=nil){
         NSDictionary *dict = @{@"id":_prePlayerId};
@@ -98,6 +102,7 @@ static MediaManager *mediaManager;
     [_player cancelPendingPrerolls];
     [_player replaceCurrentItemWithPlayerItem:nil];
     _player = nil;
+    self.isPlaying = false;
     
     if(!IsEmptyStr(clientId)&&[ZQWebVCSingleton shareInstance].webVC.webView!=nil){
         NSDictionary *dict = @{@"id":_prePlayerId};
@@ -152,7 +157,7 @@ static MediaManager *mediaManager;
         float duration = CMTimeGetSeconds(songItem.duration);
         if (current) {
             float percent = current / duration;
-            if(!IsEmptyStr(weakSelf.prePlayerId)&&[ZQWebVCSingleton shareInstance].webVC.webView!=nil){
+            if(!IsEmptyStr(weakSelf.prePlayerId)&&[ZQWebVCSingleton shareInstance].webVC.webView!=nil && self.isPlaying){
                 NSDictionary *dict = @{@"id":weakSelf.prePlayerId,@"currentTime":@(current),@"duration":@(duration),@"percent":@(percent)};
                 //NSLog(@"播放长度：%.2f, 总长度：%.2f, 百分比：%.2f",current,duration,percent);
                 
@@ -207,6 +212,7 @@ static MediaManager *mediaManager;
     CMTime cmtime = _player.currentTime;
     cmtime.value = 0;
     [_player seekToTime:cmtime];
+    self.isPlaying = false;
     
     NSDictionary *dict = @{@"id":_prePlayerId};
     NSString *jsonStr = [Helper covertStringWithJson:dict];
@@ -242,7 +248,7 @@ static MediaManager *mediaManager;
              //上传数据
              NSDictionary *dict = @{@"id":_prePlayerId,@"length":@(cacheItem.totalLength),@"cache":zonesArr};
              NSString *jsonStr = [Helper covertStringWithJson:dict];
-             NSString *jsStr = [NSString stringWithFormat:@"ZhuanQuanJSBridge.emit('mediaPrepared',%@);",jsonStr];
+             NSString *jsStr = [NSString stringWithFormat:@"ZhuanQuanJSBridge.emit('mediaProgress',%@);",jsonStr];
              [[ZQWebVCSingleton shareInstance].webVC.webView stringByEvaluatingJavaScriptFromString:jsStr];
              
              //缓存结束，销毁定时器

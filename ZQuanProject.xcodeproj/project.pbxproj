@@ -1142,7 +1142,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer: Lixin Hao (54KENJ26LF)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3WAEEN98E5;
+				DEVELOPMENT_TEAM = JA5QLCHF8U;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/ZQuanProject/ZQuanProject-Prefix.pch";
 				INFOPLIST_FILE = ZQuanProject/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -1167,7 +1167,7 @@
 					"\"UMMobClick\"",
 					"-all_load",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = yy.cc.yycircling;
+				PRODUCT_BUNDLE_IDENTIFIER = cc.circling;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1184,7 +1184,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer: Lixin Hao (54KENJ26LF)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3WAEEN98E5;
+				DEVELOPMENT_TEAM = JA5QLCHF8U;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/ZQuanProject/ZQuanProject-Prefix.pch";
 				INFOPLIST_FILE = ZQuanProject/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -1209,7 +1209,7 @@
 					"\"UMMobClick\"",
 					"-all_load",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = yy.cc.yycircling;
+				PRODUCT_BUNDLE_IDENTIFIER = cc.circling;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
