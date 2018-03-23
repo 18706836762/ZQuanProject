@@ -90,8 +90,17 @@ static MediaManager *mediaManager;
     [_player cancelPendingPrerolls];
     [_player replaceCurrentItemWithPlayerItem:nil];
     self.isPlaying = false;
+
+    if(_timer){
+        [_timer invalidate];
+        _timer = nil;
+    }
+    if (_timeObserve) {
+        [_player removeTimeObserver:_timeObserve];
+        _timeObserve = nil;
+    }
     
-    if(!IsEmptyStr(clientId)&&[ZQWebVCSingleton shareInstance].webVC.webView!=nil&&_prePlayerId!=nil){
+    if(!IsEmptyStr(clientId)&&[ZQWebVCSingleton shareInstance].webVC.webView!=nil){
         NSDictionary *dict = @{@"id":_prePlayerId};
         NSString *jsStr = [NSString stringWithFormat:@"javascript: ZhuanQuanJSBridge._invokeJS(\"%@\",%@);",clientId,[Helper covertStringWithJson:dict]];
         [[ZQWebVCSingleton shareInstance].webVC.webView stringByEvaluatingJavaScriptFromString:jsStr];
@@ -107,8 +116,17 @@ static MediaManager *mediaManager;
     [_player replaceCurrentItemWithPlayerItem:nil];
     _player = nil;
     self.isPlaying = false;
+
+    if(_timer){
+        [_timer invalidate];
+        _timer = nil;
+    }
+    if (_timeObserve) {
+        [_player removeTimeObserver:_timeObserve];
+        _timeObserve = nil;
+    }
     
-    if(!IsEmptyStr(clientId)&&[ZQWebVCSingleton shareInstance].webVC.webView!=nil&&_prePlayerId!=nil){
+    if(!IsEmptyStr(clientId)&&[ZQWebVCSingleton shareInstance].webVC.webView!=nil){
         NSDictionary *dict = @{@"id":_prePlayerId};
         NSString *jsStr = [NSString stringWithFormat:@"javascript: ZhuanQuanJSBridge._invokeJS(\"%@\",%@);",clientId,[Helper covertStringWithJson:dict]];
         [[ZQWebVCSingleton shareInstance].webVC.webView stringByEvaluatingJavaScriptFromString:jsStr];
@@ -262,7 +280,7 @@ static MediaManager *mediaManager;
                      _timer = nil;
                  }
              }
-             else {
+             else if(_timer) {
                  [_timer invalidate];
                  _timer = nil;
              }
@@ -285,8 +303,8 @@ static MediaManager *mediaManager;
         }
         if(_timer){
             [_timer invalidate];
+            _timer = nil;
         }
-        _timer = nil;
         [[NSNotificationCenter defaultCenter] removeObserver:self];
     }
 }
