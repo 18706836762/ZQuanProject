@@ -84,10 +84,10 @@ static MediaManager *mediaManager;
 -(void)stopWithClientId:(NSString*)clientId;
 {
     _prePlayerUrl = nil;
-    [_player seekToTime:kCMTimeZero];
     [_player pause];
     [_player cancelPendingPrerolls];
     [_player replaceCurrentItemWithPlayerItem:nil];
+    _player = nil;
     self.isPlaying = false;
 
     if(_timer){
@@ -111,6 +111,7 @@ static MediaManager *mediaManager;
 -(void)releaseWithClientId:(NSString*)clientId;
 {
     _prePlayerUrl = nil;
+    [_player pause];
     [_player cancelPendingPrerolls];
     [_player replaceCurrentItemWithPlayerItem:nil];
     _player = nil;
