@@ -2,17 +2,17 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "main_bg.png",
+      "filename" : "750-1334.jpg",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "main_bg@2x.png",
+      "filename" : "750-1334.jpg",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
-      "filename" : "main_bg_1024_2208.png",
+      "filename" : "1242-2208.jpg",
       "scale" : "3x"
     }
   ],
