@@ -83,7 +83,6 @@ static MediaManager *mediaManager;
 
 -(void)stopWithClientId:(NSString*)clientId;
 {
-    _prePlayerId = nil;
     _prePlayerUrl = nil;
     [_player seekToTime:kCMTimeZero];
     [_player pause];
@@ -100,17 +99,17 @@ static MediaManager *mediaManager;
         _timeObserve = nil;
     }
     
-    if(!IsEmptyStr(clientId)&&[ZQWebVCSingleton shareInstance].webVC.webView!=nil){
+    if(!IsEmptyStr(clientId)&&[ZQWebVCSingleton shareInstance].webVC.webView!=nil&&_prePlayerId!=nil){
         NSDictionary *dict = @{@"id":_prePlayerId};
         NSString *jsStr = [NSString stringWithFormat:@"javascript: ZhuanQuanJSBridge._invokeJS(\"%@\",%@);",clientId,[Helper covertStringWithJson:dict]];
         [[ZQWebVCSingleton shareInstance].webVC.webView stringByEvaluatingJavaScriptFromString:jsStr];
     }
+    _prePlayerId = nil;
 }
 
 
 -(void)releaseWithClientId:(NSString*)clientId;
 {
-    _prePlayerId = nil;
     _prePlayerUrl = nil;
     [_player cancelPendingPrerolls];
     [_player replaceCurrentItemWithPlayerItem:nil];
@@ -126,11 +125,12 @@ static MediaManager *mediaManager;
         _timeObserve = nil;
     }
     
-    if(!IsEmptyStr(clientId)&&[ZQWebVCSingleton shareInstance].webVC.webView!=nil){
+    if(!IsEmptyStr(clientId)&&[ZQWebVCSingleton shareInstance].webVC.webView!=nil&&_prePlayerId!=nil){
         NSDictionary *dict = @{@"id":_prePlayerId};
         NSString *jsStr = [NSString stringWithFormat:@"javascript: ZhuanQuanJSBridge._invokeJS(\"%@\",%@);",clientId,[Helper covertStringWithJson:dict]];
         [[ZQWebVCSingleton shareInstance].webVC.webView stringByEvaluatingJavaScriptFromString:jsStr];
     }
+    _prePlayerId = nil;
 }
 
 
@@ -155,7 +155,7 @@ static MediaManager *mediaManager;
 {
     AVPlayerItem * songItem = [[AVPlayerItem alloc]initWithURL:[NSURL URLWithString:proxyURLString]];
 
-    if(!_player && _player.currentItem==nil){
+    if(!_player || _player.currentItem==nil){
 
         _player = [[AVPlayer alloc]initWithPlayerItem:songItem];
 
