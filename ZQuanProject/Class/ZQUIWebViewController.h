@@ -25,4 +25,5 @@
 
 -(void)emitWithEvenParam:(NSString *)paramStr;
 
+-(void)startFullScreen;
 @end
