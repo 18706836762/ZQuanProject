@@ -34,7 +34,7 @@
     [NSURLProtocol wk_registerScheme:@"h5container.message"];
     
     //将要进入全屏
-    //[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(startFullScreen:) name:UIWindowDidResignKeyNotification object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(startFullScreen:) name:UIWindowDidResignKeyNotification object:nil];
     //退出全屏
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(endFullScreen:) name:UIWindowDidBecomeHiddenNotification object:nil];
     
@@ -295,7 +295,7 @@
 
 
 #pragma mark - video
--(void)startFullScreen
+-(void)startFullScreen:(NSNotification *)notification
 {
     NSLog(@"全屏开始");
     AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];

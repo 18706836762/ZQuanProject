@@ -41,7 +41,7 @@
             [self jsHandlerData:dict ClientId:clientId];
             
             [[NSUserDefaults standardUserDefaults] setObject:dict forKey:K_sinaWBLoginData];
-        
+            
         }else if(response.statusCode==WeiboSDKResponseStatusCodeUserCancel){
             //取消
             success = NO;

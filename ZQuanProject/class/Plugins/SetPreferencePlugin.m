@@ -32,8 +32,10 @@
         if(!IsEmptyStr(value)){
             
             [[NSUserDefaults standardUserDefaults] setObject:value forKey:key];
+            [[NSUserDefaults standardUserDefaults] synchronize];
         }else{
             [[NSUserDefaults standardUserDefaults] removeObjectForKey:key];
+            [[NSUserDefaults standardUserDefaults] synchronize];
         }
         
         NSString *jsStr = [NSString stringWithFormat:@"javascript: ZhuanQuanJSBridge._invokeJS(\"%@\");",clientId];

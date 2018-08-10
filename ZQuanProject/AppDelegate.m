@@ -68,6 +68,7 @@
 
     NSDictionary *dictionnary = [[NSDictionary alloc] initWithObjectsAndKeys:newAgent, @"UserAgent", nil];
     [[NSUserDefaults standardUserDefaults] registerDefaults:dictionnary];
+     [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
 
